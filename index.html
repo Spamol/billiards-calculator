@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html manifest="bil.manifest">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen, mobile" title="main" charset="utf-8">
+	<script type="text/javascript" src="script.js"></script>
+    <title>Расчет стоимости бильярдной партии</title>
+</head>
+
+<body>
+<div id="status"><h3>&nbsp;</h3></div>
+<div class="wrap">
+	<div class="time">
+		<h2>Время</h2>
+		<div id="run_game">Начало игры - 00:00:00</div>
+		<div id="time_game">Длительн. - < 1 мин.</div>
+	</div>
+	<div class="money">
+		<h2>Деньги</h2>
+		<div id="tarif">Тариф: 0 руб/ч*</div>
+		<div id="summ">Cтоимость: 0 руб.</div>
+	</div><div style="clear:both;"></div>
+	<div id="real_time">Текущие время - 00:00:00</div>
+	<a class="openTable" href="javascript:runTime()">Открыть стол</a>
+	<a class="closeTable" href="javascript:pauseTime()">Закрыть стол</a>
+	<a class="sbrosTable" href="javascript:sbrosTime()">Сброс</a>
+</div>
+<div style="clear:both;"></div>
+<div class="timeBord">
+<h3>Тарифы на игру:</h3>
+<p>15.00 - 18.00: час стоит 150p</p>
+<p>18.00 - 21.00: час стоит 210p</p>
+<p>21.00 - 00.00: час стоит 300p</p>
+<p>00.00 - 03.00: час стоит 360p</p>
+<small>*Тариф меняется автоматически в зависимости от текущего времени!</small></div>
+</body>
+</html>
